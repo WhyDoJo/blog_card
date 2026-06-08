@@ -1,0 +1,131 @@
+/* GLOBAL */
+@import url('_reset.css');
+@import url('_fonts.css');
+
+:root {
+	--color-black: hsl(0, 0%, 0%);
+	--color-white: hsl(0, 0%, 100%);
+	--color-yellow: hsl(47, 88%, 63%);
+	--color-gray-500: hsl(0, 0%, 42%);
+	--color-gray-950: hsl(0, 0%, 7%);
+
+	--font-family: 'Figtree';
+}
+
+body {
+	margin: 0;
+	min-height: 100vh;
+	font-size: 16px;
+	font-family: var(--font-family);
+	font-weight: 400;
+	background-color: var(--color-yellow);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.card {
+	padding: 24px;
+	max-width: 384px;
+	background-color: var(--color-white);
+	border: 1px solid var(--color-gray-950);
+	box-shadow: 8px 8px 0 0 var(--color-black);
+	border-radius: 20px;
+
+	@media (max-width: 375px) {
+		max-width: 327px;
+	}
+}
+
+.card__wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+}
+
+.card__img {
+	border-radius: 10px;
+
+	@media (max-width: 375px) {
+		max-width: 279px;
+		min-height: 200px;
+	}
+}
+
+.card__text {
+	padding: 24px 0;
+}
+
+.card__tag {
+	padding: 4px 12px;
+	display: block;
+	width: fit-content;
+	color: var(--color-gray-950);
+	font-family: var(--font-family);
+	font-size: 14px;
+	font-weight: 800;
+	line-height: 1.5;
+	background: var(--color-yellow);
+	border-radius: 4px;
+
+	margin-bottom: 12px;
+
+	@media (max-width: 375px) {
+		font-size: 12px;
+	}
+}
+
+.card__date {
+	display: block;
+	color: var(--color-gray-950);
+	font-family: var(--font-family);
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 1.5;
+
+	margin-bottom: 12px;
+
+	@media (max-width: 375px) {
+		font-size: 12px;
+	}
+}
+
+.card__title {
+	margin: 0;
+	color: var(--color-gray-950);
+	font-family: var(--font-family);
+	font-size: 24px;
+	font-weight: 800;
+	line-height: 1.5;
+
+	margin-bottom: 12px;
+
+	@media (max-width: 375px) {
+		font-size: 20px;
+	}
+}
+
+.card__desc {
+	margin: 0;
+	color: var(--color-gray-500);
+	font-family: var(--font-family);
+	font-weight: 500;
+	line-height: 1.5;
+
+	@media (max-width: 375px) {
+		font-size: 14px;
+	}
+}
+
+.card__author {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.card__name {
+	color: var(--color-gray-950);
+	font-size: 14px;
+	font-weight: 800;
+	line-height: 1.5;
+}

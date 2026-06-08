@@ -1,0 +1,19 @@
+@font-face {
+	font-family: 'Figtree';
+	src:
+		url('../fonts/Figtree-ExtraBold.ttf') format(woff),
+		url('../fonts/Figtree-ExtraBold.ttf') format(woff2);
+	font-weight: 800;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Figtree';
+	src:
+		url('../fonts/Figtree-Medium.ttf') format(woff),
+		url('../fonts/Figtree-Medium.ttf') format(woff2);
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
